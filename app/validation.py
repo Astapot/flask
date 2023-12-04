@@ -7,6 +7,7 @@ from errors import HttpError
 class CreateAdv(pydantic.BaseModel):
     header: str
     description: str
+    owner: str
 
     @pydantic.field_validator('header')
     @classmethod
@@ -19,6 +20,7 @@ class CreateAdv(pydantic.BaseModel):
 class UpdateAdv(pydantic.BaseModel):
     header: Optional[str] = None
     description: Optional[str] = None
+    owner: Optional[str] = None
 
     @pydantic.field_validator('header')
     @classmethod

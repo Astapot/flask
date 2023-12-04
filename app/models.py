@@ -3,8 +3,8 @@ from sqlalchemy.orm import sessionmaker, DeclarativeBase, mapped_column, Mapped
 from sqlalchemy import create_engine, String, func, DateTime
 import datetime
 
-POSTGRES_USER = os.getenv('POSTGRES_USER', 'secret')
-POSTGRES_PASSWORD = os.getenv('POSTGRES_PASSWORD', 'app')
+POSTGRES_USER = os.getenv('POSTGRES_USER', 'postgres')
+POSTGRES_PASSWORD = os.getenv('POSTGRES_PASSWORD', '99113322vfrcbv')
 POSTGRES_DB = os.getenv('POSTGRES_DB', 'app')
 POSTGRES_HOST = os.getenv('POSTGRES_HOST', '127.0.0.1')
 POSTGRES_PORT = os.getenv('POSTGRES_PORT', '5431')
